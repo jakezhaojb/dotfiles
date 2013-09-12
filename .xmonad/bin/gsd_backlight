@@ -1,0 +1,27 @@
+#!/bin/sh
+
+brightness_max=`pkexec /usr/lib/gnome-settings-daemon/gsd-backlight-helper --get-max-brightness`
+brightness_min=0
+brightness=`pkexec /usr/lib/gnome-settings-daemon/gsd-backlight-helper --get-brightness`
+
+case "$1" in
+    up)
+        brightness=$[brightness + 3]
+    ;;
+    down)
+        brightness=$[brightness - 3]
+    ;;
+    *)
+        echo "usage: $0 {up|down}"
+esac
+
+if [[ $brightness -gt $brightness_max ]]; then
+    brightness=$brightness_max
+fi
+
+if [[ $brightness -lt $brightness_min ]]; then
+    brightness=$brightness_min
+fi
+
+pkexec /usr/lib/gnome-settings-daemon/gsd-backlight-helper --set-brightness $brightness
+exit 0

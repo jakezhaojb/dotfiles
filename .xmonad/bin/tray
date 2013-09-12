@@ -1,0 +1,32 @@
+#!/bin/sh
+# Script to launch trayer in the correct position next to xmobar.
+# Author: Vic Fryzel
+# http://github.com/vicfryzel/xmonad-config
+
+
+# This is setup to display on dual 1680x1050 monitors, with the right-side
+# monitor as primary.  Adjust margin as necessary for other resolutions/setups.
+trayer --edge top --align left --margin 1200 --widthtype pixel\
+    --width 166 --height 16 --SetDockType true --SetPartialStrut false \
+    --transparent true --alpha 0 --tint 0x2d2d2d --distance 0 \
+    --expand true --padding 0
+     
+# trayer 1.0 - lightweight GTK2+ systray for UNIX desktops
+# Command line options:
+#  -h  -- print this help and exit:
+#  -v  -- print version and exit:
+#  --edge <left|right|top|bottom|none>
+#  --align <left|right|center>
+#  --margin <number>
+#  --widthtype <request|pixel|percent>
+#  --width <number>
+#  --heighttype <pixel>
+#  --height <number>
+#  --SetDockType <true|false>
+#  --SetPartialStrut <true|false>
+#  --transparent <true|false>
+#  --alpha <number>
+#  --tint <int>
+#  --distance <number>
+#  --expand <false|true>
+#  --padding <number>
