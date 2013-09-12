@@ -65,7 +65,7 @@ let g:tex_flavor = "latex"
 set guifont=Monaco\ 8
 
 
-autocmd FileType html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
+autocmd FileType cpp,html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
 
 """
 " colorscheme
