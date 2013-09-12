@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule ".tmux-tony/vendor/tmux-mem-cpu-load"]
+	path = .tmux-tony/vendor/tmux-mem-cpu-load
+	url = https://github.com/thewtex/tmux-mem-cpu-load.git
