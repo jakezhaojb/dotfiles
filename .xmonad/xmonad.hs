@@ -58,7 +58,7 @@ myWorkspaces = ["1:Term","2:Web","3:Media","4:IM" ] ++ map show [5..9]
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "Google-chrome"  --> doShift "2:Web"
+    [ className =? "Chrome"         --> doShift "2:Web"
     , className =? "Firefox"        --> doShift "2:Web"
     , className =? "Skype"          --> doShift "4:IM"
     , className =? "Pidgin"         --> doShift "4:IM"
