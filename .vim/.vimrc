@@ -66,7 +66,7 @@ set guifont=Monaco\ 8
 
 
 set cinoptions+=g1,h2
-autocmd FileType cpp,html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
+autocmd FileType c,cpp,html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
 
 """
 " colorscheme
