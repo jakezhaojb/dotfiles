@@ -31,6 +31,8 @@ Bundle 'airblade/vim-gitgutter'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/google.vim'
+
+Bundle 'vim-scripts/python_ifold'
 "Bundle ''
 
 filetype plugin indent on     " required!

@@ -55,3 +55,6 @@
 [submodule ".tmux-tony/vendor/tmux-mem-cpu-load"]
 	path = .tmux-tony/vendor/tmux-mem-cpu-load
 	url = https://github.com/thewtex/tmux-mem-cpu-load.git
+[submodule ".vim/bundle/python_ifold"]
+	path = .vim/bundle/python_ifold
+	url = https://github.com/vim-scripts/python_ifold.git
