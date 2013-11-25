@@ -32,7 +32,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/google.vim'
 
-Bundle 'vim-scripts/python_ifold'
+Bundle 'vim-scripts/Python-Syntax-Folding'
 "Bundle ''
 
 filetype plugin indent on     " required!
@@ -129,6 +129,7 @@ set guitablabel=%{TabpageName(1)}/%{TabpageName(2)}%{TabpageState()} "1:Full Pat
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
+let g:syntastic_python_checkers = ['pyflakes']
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
