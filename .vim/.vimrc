@@ -33,6 +33,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/google.vim'
 
 Bundle 'vim-scripts/Python-Syntax-Folding'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/a.vim'
 "Bundle ''
 
 filetype plugin indent on     " required!
