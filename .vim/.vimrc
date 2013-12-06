@@ -35,6 +35,8 @@ Bundle 'vim-scripts/google.vim'
 Bundle 'vim-scripts/Python-Syntax-Folding'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/a.vim'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 "Bundle ''
 
 filetype plugin indent on     " required!
@@ -49,8 +51,8 @@ set nocp	"no compatible
 syntax enable
 set wildmode=longest:full
 set wildmenu
-set ru	"ruler
-set nu
+set ruler	"ruler
+set number
 set wrap
 set autoindent
 set smartindent
@@ -58,7 +60,14 @@ set nocindent
 set ts=4 sw=4 noet
 set smarttab
 set expandtab
+set showmode
+set showcmd
+set showmatch
 set hlsearch	
+autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+set ignorecase
+set smartcase
+set incsearch
 set autochdir
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
@@ -67,7 +76,10 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 "au BufWritePost .vimrc so ~/.vimrc
 set guifont=Monaco\ 8
-
+set mouse=a
+set autoread
+set cursorline
+set cursorcolumn  
 
 set cinoptions+=g1,h2
 autocmd FileType c,cpp,html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
