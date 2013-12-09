@@ -31,6 +31,7 @@ Bundle 'airblade/vim-gitgutter'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/google.vim'
+Bundle 'drmikehenry/vim-headerguard'
 
 Bundle 'vim-scripts/Python-Syntax-Folding'
 Bundle 'kien/ctrlp.vim'
@@ -76,10 +77,14 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 "au BufWritePost .vimrc so ~/.vimrc
 set guifont=Monaco\ 8
-set mouse=a
+"set mouse=a
 set autoread
 set cursorline
 set cursorcolumn  
+
+set foldmethod=syntax
+set foldlevel=100
+set foldcolumn=2
 
 set cinoptions+=g1,h2
 autocmd FileType c,cpp,html,javascript :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
