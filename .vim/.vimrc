@@ -20,6 +20,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/vim-snippets"
 Bundle 'garbas/vim-snipmate'
+Bundle 'editorconfig/editorconfig-vim'
 
 Bundle 'ervandew/supertab'
 Bundle 'spolu/dwm.vim'
@@ -32,6 +33,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/google.vim'
 Bundle 'drmikehenry/vim-headerguard'
+Bundle 'derekwyatt/vim-scala'
 
 Bundle 'vim-scripts/Python-Syntax-Folding'
 Bundle 'kien/ctrlp.vim'
