@@ -40,6 +40,10 @@ Bundle 'vim-scripts/a.vim'
 Bundle "lepture/vim-jinja"
 Bundle 'pangloss/vim-javascript'
 
+" Added by Jake, 08/31/2014
+Bundle 'nvie/vim-flake8'
+Bundle 'jvirtanen/vim-octave'
+
 "Bundle ''
 
 filetype plugin indent on     " required!
@@ -163,3 +167,19 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 nmap <F8> :TagbarToggle<cr>
 nmap <F9> :SCCompile<cr>
 nmap <F10> :SCCompileRun<cr>
+
+" Add by Jake, 08/31/2014
+"Disable EX mode"
+map Q <Nop>
+map f <Nop>
+" Stoping searching
+nmap <F2> :nohlsearch<CR>
+" Clang complete options
+let g:clang_complete_copen=1
+let g:clang_periodic_quickfix=1
+let g:clang_snippets=1
+let g:clang_close_preview=1
+let g:clang_use_library=1
+let g:clang_user_options='|| exit 0'
+let g:clang_user_options='-std=c++11'
+let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
