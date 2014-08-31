@@ -7,3 +7,8 @@ vim usage:
     ln -sf ~/.files/.vim ~/.vim
     ln -sf ~/.vim/.vimrc ~/.vimrc
 
+
+Then let Vundle take over:
+    vim ~/.vimrc
+    :BundleInstall
+
