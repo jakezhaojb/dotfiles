@@ -44,6 +44,9 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'nvie/vim-flake8'
 Bundle 'jvirtanen/vim-octave'
 
+" Added by Jake, NERDTree Plugin, 08/31/2014
+Bundle 'scrooloose/nerdtree'
+
 "Bundle ''
 
 filetype plugin indent on     " required!
@@ -183,3 +186,6 @@ let g:clang_use_library=1
 let g:clang_user_options='|| exit 0'
 let g:clang_user_options='-std=c++11'
 let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
+
+" Add by Jake, 08/31/2014, for NERDTree shortcut map
+map <C-e> :NERDTreeToggle<CR>
