@@ -9,6 +9,15 @@ vim usage:
 
 
 Then let Vundle take over:
+
     vim ~/.vimrc
     :BundleInstall
 
+
+In order to use NERDTree, try <Ctrl+E> in vim console.
+
+
+In order to use tag-bar, try <F8>; but you should have exuberant-cTags installed. Basically, on Linux/Mac systems the default ctags is probably the basic ctags (useless! :( ), not exuberant-cTags (Use ctags --version to see what your default ctags is). So you have to rearrange your PATH by: 
+    PATH=/usr/local/bin:$PATH
+    which ctags
+Browse [here] for more infomation about exuberant-cTags installation and setting.
