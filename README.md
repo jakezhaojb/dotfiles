@@ -22,4 +22,4 @@ In order to use tag-bar, try <F8>; but you should have exuberant-ctags installed
     PATH=/usr/local/bin:$PATH
     which ctags
 
-Browse [here](http://www.scholarslab.org/research-and-development/code-spelunking-with-ctags-and-vim/) for more infomation about exuberant-cTags installation and setting.
+Browse [here](http://www.scholarslab.org/research-and-development/code-spelunking-with-ctags-and-vim/) for more infomation about exuberant-ctags installation and setting.
