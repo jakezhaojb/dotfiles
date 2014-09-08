@@ -189,3 +189,8 @@ let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
 
 " Add by Jake, 08/31/2014, for NERDTree shortcut map
 map <C-e> :NERDTreeToggle<CR>
+
+
+" Add by Jake, for C++ and lua indentation
+autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
+autocmd FileType lua setlocal shiftwidth=2 tabstop=2
