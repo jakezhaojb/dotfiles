@@ -26,5 +26,6 @@ Browse [here](http://www.scholarslab.org/research-and-development/code-spelunkin
 
 
 Bash usage (if you already clone it):
+
     ln -sf ~/.files/.profile ~/.profile
     ln -sf ~/.files/.bashrc ~/.bashrc
