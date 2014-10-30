@@ -31,6 +31,14 @@ Bash usage (if you already clone the repo):
     ln -sf ~/.files/.bashrc ~/.bashrc
 
 
-Zsh usage (if you already clone the repo):
+Zsh usage, for Zsh users you should first get [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) installed, simply by:
+
+    curl -L http://install.ohmyz.sh | sh
+
+Then create the soft link to configure file by:
 
     ln -sf ~/.files/.zshrc ~/.zshrc
+
+Furthermore you can write your own theme file in **.zsh-theme** and link them to the right place where Zsh can trace:
+
+    ln -sf ~/.files/.zsh-theme/jake.zsh-theme ~/.oh-my-zsh/themes/jake.zsh-theme
