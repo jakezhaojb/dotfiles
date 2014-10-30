@@ -5,7 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="random"
+ZSH_THEME="jake"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx pip ruby python)
+plugins=(git osx pip ruby brew python terminalapp zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,3 +95,27 @@ alias english='cat /Users/zhaojunbo/Documents/Eng'
 # Projects
 alias ae='cd /Users/zhaojunbo/Projects/SDAE-by-paracel'
 alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
+# ---------------------------------------------
+# Utils
+alias V='vim '
+alias G='g++ -Wall -std=c++11'
+alias fortune='fortune | cowsay | lolcat'
+## Some global alias
+alias -g xargs='gxargs'
+alias -g find='gfind'
+## suffix
+alias -s cpp=vim
+alias -s hpp=vim
+alias -s h=vim
+alias -s c=vim
+alias m=vim
+alias lua=vim
+alias py=vim
+alias md=vim
+alias tex=vim
+
+alias html=chromium
+
+
+# globbing patterns to match all the files except some
+setopt extended_glob
