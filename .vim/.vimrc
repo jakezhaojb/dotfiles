@@ -47,7 +47,8 @@ Bundle 'jvirtanen/vim-octave'
 " Added by Jake, NERDTree Plugin, 08/31/2014
 Bundle 'scrooloose/nerdtree'
 
-"Bundle ''
+" Added by Jake, python-mode
+Bundle 'klen/python-mode'
 
 filetype plugin indent on     " required!
 
@@ -194,3 +195,9 @@ map <C-e> :NERDTreeToggle<CR>
 " Add by Jake, for C++ and lua indentation
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
 autocmd FileType lua setlocal shiftwidth=2 tabstop=2
+
+" For pymode driving
+" Disable all rope completions, since it is much worse than Omni-completion.
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_autoimport = 0

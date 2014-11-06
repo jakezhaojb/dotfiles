@@ -100,6 +100,7 @@ alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
 alias V='vim '
 alias G='g++ -Wall -std=c++11'
 alias fortune='fortune | cowsay | lolcat'
+alias F='figlet '
 ## Some global alias
 alias -g xargs='gxargs'
 alias -g find='gfind'
