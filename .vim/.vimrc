@@ -40,14 +40,14 @@ Bundle 'vim-scripts/a.vim'
 Bundle "lepture/vim-jinja"
 Bundle 'pangloss/vim-javascript'
 
-" Added by Jake, 08/31/2014
+" For octave and Matlab highlighting
 Bundle 'nvie/vim-flake8'
 Bundle 'jvirtanen/vim-octave'
 
-" Added by Jake, NERDTree Plugin, 08/31/2014
+" NERDTree
 Bundle 'scrooloose/nerdtree'
 
-" Added by Jake, python-mode
+" Python-mode
 Bundle 'klen/python-mode'
 
 filetype plugin indent on     " required!
@@ -172,7 +172,6 @@ nmap <F8> :TagbarToggle<cr>
 nmap <F9> :SCCompile<cr>
 nmap <F10> :SCCompileRun<cr>
 
-" Add by Jake, 08/31/2014
 "Disable EX mode"
 map Q <Nop>
 map f <Nop>
@@ -188,11 +187,11 @@ let g:clang_user_options='|| exit 0'
 let g:clang_user_options='-std=c++11'
 let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
 
-" Add by Jake, 08/31/2014, for NERDTree shortcut map
+" NERDTree shortcut map
 map <C-e> :NERDTreeToggle<CR>
 
 
-" Add by Jake, for C++ and lua indentation
+" For C++ and lua indentation
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
 autocmd FileType lua setlocal shiftwidth=2 tabstop=2
 
