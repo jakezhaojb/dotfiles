@@ -109,14 +109,22 @@ alias -s cpp=vim
 alias -s hpp=vim
 alias -s h=vim
 alias -s c=vim
-alias m=vim
-alias lua=vim
-alias py=vim
-alias md=vim
-alias tex=vim
-
-alias html=chromium
-
+alias -s m=vim
+alias -s lua=vim
+alias -s py=vim
+alias -s md=vim
+alias -s tex=vim
+alias -s html=chromium
+## git
+alias -g HEAD^='HEAD\^'
+## hub
+alias git=hub
 
 # globbing patterns to match all the files except some
 setopt extended_glob
+
+figlet Dpark Doc\!
+echo -e '\n'
+figlet OpenBLAS
+
+

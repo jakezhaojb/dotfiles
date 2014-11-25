@@ -197,6 +197,7 @@ autocmd FileType lua setlocal shiftwidth=2 tabstop=2
 
 " For pymode driving
 " Disable all rope completions, since it is much worse than Omni-completion.
+let g:pymode_rope=0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
