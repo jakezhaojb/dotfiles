@@ -5,9 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 #ZSH_THEME="random"
-ZSH_THEME="jake"
+#ZSH_THEME="jake"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,29 +100,39 @@ alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
 alias V='vim '
 alias G='g++ -Wall -std=c++11'
 alias fortune='fortune | cowsay | lolcat'
-alias F='figlet '
 ## Some global alias
-alias -g xargs='gxargs'
-alias -g find='gfind'
 ## suffix
 alias -s cpp=vim
 alias -s hpp=vim
 alias -s h=vim
 alias -s c=vim
-alias -s m=vim
-alias -s lua=vim
-alias -s py=vim
-alias -s md=vim
-alias -s tex=vim
-alias -s html=chromium
-## git
-alias -g HEAD^='HEAD\^'
-## hub
-alias git=hub
+alias m=vim
+alias lua=vim
+alias py=vim
+alias md=vim
+alias tex=vim
+
+alias html=chromium
+
 
 # globbing patterns to match all the files except some
 setopt extended_glob
 
-figlet Dpark Doc\!
-echo -e '\n'
-figlet OpenBLAS
+
+# python2.7
+export LD_LIBRARY_PATH=/usr/local/pkg/python/2.7/lib:$LD_LIBRARY_PATH 
+export PATH=/usr/local/pkg/python/2.7/bin:$PATH
+alias python='python2.7'
+
+# module
+export MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
+
+# self=bin
+export PATH=$PATH:/home/jz1672/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/jz1672/lib
+export CPLUS_INCLUDE_PATH=/home/jz1672/include:$CPLUS_INCLUDE_PATH
+export C_INCLUDE_PATH=/home/jz1672/include:$C_INCLUDE_PATH
+
+# torch
+alias th='/home/jz1672/torch_src/torch-distro/run.sh'
+alias luarocks='/home/jz1672/torch_src/torch-distro/install/bin/luarocks'
