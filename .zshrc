@@ -126,5 +126,3 @@ setopt extended_glob
 figlet Dpark Doc\!
 echo -e '\n'
 figlet OpenBLAS
-
-
