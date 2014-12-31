@@ -58,6 +58,10 @@ let g:lua_compiler_name = '/usr/local/bin/luac'
 let b:lua_compiler_name = '/usr/local/bin/lualint'
 let g:lua_safe_omni_modules = 1
 
+" CUDA
+Bundle 'cmaureir/snipmate-snippets-cuda'
+au BufNewFile,BufRead *.cu set ft=cuda
+
 filetype plugin indent on     " required!
 
 """
@@ -202,6 +206,7 @@ map <C-e> :NERDTreeToggle<CR>
 " For C++ and lua indentation
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
 autocmd FileType lua setlocal shiftwidth=3 tabstop=3
+autocmd FileType c setlocal shiftwidth=3 tabstop=3
 
 " For pymode driving
 " Disable all rope completions, since it is much worse than Omni-completion.

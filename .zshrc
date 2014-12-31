@@ -128,11 +128,24 @@ alias python='python2.7'
 export MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
 
 # self=bin
-export PATH=$PATH:/home/jz1672/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/jz1672/lib
+export PATH=/home/jz1672/bin:$PATH
+export LD_LIBRARY_PATH=/home/jz1672/lib:$LD_LIBRARY_PATH
 export CPLUS_INCLUDE_PATH=/home/jz1672/include:$CPLUS_INCLUDE_PATH
 export C_INCLUDE_PATH=/home/jz1672/include:$C_INCLUDE_PATH
 
 # torch
 alias th='/home/jz1672/torch_src/torch-distro/run.sh'
 alias luarocks='/home/jz1672/torch_src/torch-distro/install/bin/luarocks'
+
+# C++ so
+export LD_LIBRARY_PATH=/usr/local/pkg/gcc/4.9.2/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/usr/local/pkg/gcc/4.8.2/lib:$LD_LIBRARY_PATH
+
+# cuda
+export LD_LIBRARY_PATH=/usr/local/pkg/cuda/6.5/lib64:$LD_LIBRARY_PATH
+module load cuda-6.5
+export CUDA_TOOLKIT_ROOT_DIR=/usr/local/pkg/cuda/6.5
+export CUDA_ROOT=/usr/local/pkg/cuda/6.5/bin
+export CUDA_PATH=/usr/local/pkg/cuda/6.5
+# Provisional TODO
+alias nvcc='/usr/local/pkg/cuda/current/cuda/bin/nvcc'
