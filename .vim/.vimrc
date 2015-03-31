@@ -48,7 +48,7 @@ Bundle 'jvirtanen/vim-octave'
 Bundle 'scrooloose/nerdtree'
 
 " Python-mode
-Bundle 'klen/python-mode'
+"Bundle 'klen/python-mode'
 
 " Lua
 Bundle 'xolox/vim-misc'

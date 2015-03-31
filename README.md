@@ -43,3 +43,7 @@ Then create the soft link to configure file by:
 Furthermore you can write your own theme file in **.zsh-theme** and link them to the right place where Zsh can trace:
 
     ln -sf ~/.files/.zsh-theme/jake.zsh-theme ~/.oh-my-zsh/themes/jake.zsh-theme
+
+### Tmux usage
+    ln -sf ~/.files/.tmux-tony/.tmux.conf ~/.tmux.conf
+    tmux source-file ~/.tmux.conf
