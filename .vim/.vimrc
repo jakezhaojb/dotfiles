@@ -209,3 +209,6 @@ let g:pymode_rope=0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
+
+" for CUDA
+autocmd BufNewFile,BufReadPost *.cuh set filetype=cpp
