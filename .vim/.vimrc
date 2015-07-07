@@ -59,7 +59,7 @@ let b:lua_compiler_name = '/usr/local/bin/lualint'
 let g:lua_safe_omni_modules = 1
 
 " CUDA
-Bundle 'cmaureir/snipmate-snippets-cuda'
+Bundle 'jakezhaojb/snipmate-snippets-cuda'
 
 filetype plugin indent on     " required!
 
