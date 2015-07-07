@@ -53,10 +53,13 @@ Bundle 'scrooloose/nerdtree'
 " Lua
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-lua-ftplugin'
-let g:lua_complete_omni = 1
+let g:lua_complete_omni = 0
 let g:lua_compiler_name = '/usr/local/bin/luac'
 let b:lua_compiler_name = '/usr/local/bin/lualint'
 let g:lua_safe_omni_modules = 1
+
+" CUDA
+Bundle 'cmaureir/snipmate-snippets-cuda'
 
 filetype plugin indent on     " required!
 
@@ -174,7 +177,7 @@ let g:syntastic_python_checkers = ['flake8', 'pyflakes']
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
-let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+let g:clang_library_path = '/usr/lib/llvm-3.4/lib'
 "Key Map"
 nmap <F8> :TagbarToggle<cr>
 nmap <F9> :SCCompile<cr>
@@ -209,3 +212,10 @@ let g:pymode_rope=0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
+
+" for CUDA
+autocmd BufNewFile,BufRead *.cu,*.cuh set ft=cuda
+
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['cuda'] = 'cu'
