@@ -204,6 +204,7 @@ map <C-e> :NERDTreeToggle<CR>
 
 " For C++ and lua indentation
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
+autocmd FileType cu setlocal shiftwidth=2 tabstop=2
 autocmd FileType lua setlocal shiftwidth=3 tabstop=3
 
 " For pymode driving
