@@ -119,7 +119,7 @@ autocmd FileType yaml setlocal sw=2 ts=2
 """
 " Molokai
 colorscheme molokai
-set background=dark
+set background=light
 let g:molokai_original = 1
 set t_Co=256
 let g:Powerline_symbols = 'fancy'

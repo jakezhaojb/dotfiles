@@ -1,16 +1,18 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/home/junbo/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="random"
-ZSH_THEME="jake"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -25,10 +27,10 @@ ZSH_THEME="jake"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
- COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -47,14 +49,14 @@ ZSH_THEME="jake"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx pip ruby brew python terminalapp zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -76,53 +78,17 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texb
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# alias for Jake
-# ---------------------------------------------
-# Basic
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-# ---------------------------------------------
-# Diary
-alias ..='cd ..'
-alias ~='cd ~'
-alias texmaker='open /Users/zhaojunbo/Applications/TexmakerMacosxLion/texmaker.app'
-alias textedit='open -a TextEdit'
-alias highlight='cd /Users/zhaojunbo/Starred/Highlight'
-alias english='cat /Users/zhaojunbo/Documents/Eng'
-# ---------------------------------------------
-# Projects
-alias ae='cd /Users/zhaojunbo/Projects/SDAE-by-paracel'
-alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
-# ---------------------------------------------
-# Utils
-alias V='vim '
-alias G='g++ -Wall -std=c++11'
-alias fortune='fortune | cowsay | lolcat'
-alias F='figlet '
-## Some global alias
-alias -g xargs='gxargs'
-alias -g find='gfind'
-## suffix
-alias -s cpp=vim
-alias -s hpp=vim
-alias -s h=vim
-alias -s c=vim
-alias -s m=vim
-alias -s lua=vim
-alias -s py=vim
-alias -s md=vim
-alias -s tex=vim
-alias -s html=chromium
-## git
-alias -g HEAD^='HEAD\^'
-## hub
-alias git=hub
+alias emacs='emacs -nw'
+alias E='emacs'
 
-# globbing patterns to match all the files except some
-setopt extended_glob
+alias wwa='cd ~/Projects/what-where'
 
-figlet Dpark Doc\!
-echo -e '\n'
-figlet OpenBLAS
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias th_pkg='cd /usr/local/share/lua/5.1'
+alias sentiment='cd ~/Projects/Sentiment'

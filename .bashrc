@@ -106,23 +106,21 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+alias ack='ack-grep'
 alias ..='cd ..'
 alias ~='cd ~'
-alias texmaker='open /Users/zhaojunbo/Applications/TexmakerMacosxLion/texmaker.app'
-alias ae='cd /Users/zhaojunbo/Projects/SDAE-by-paracel'
-alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
+alias paracel='cd /home/junbo/DOUBAN/paracel'
+alias AE='cd /home/junbo/DOUBAN/CNN/sparse_a_encoder'
+alias dropbox='/home/junbo/Downloads/dropbox.py'
 
-# For macbook terminal
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-alias textedit='open -a TextEdit'
+# Something interesting if uncomment next line
+# nyc
+alias emacs='emacs -nw'
+alias E='emacs'
 
-alias phd='open ~/Documents/Books/PhD_not_enough.pdf'
-alias highlight='cd /Users/zhaojunbo/Starred/Highlight'
-alias english='cat /Users/zhaojunbo/Documents/Eng'
+alias wwa='cd /home/junbo/Projects/what-where'
 
-# rm !(*zip)
-shopt -s extglob
-
-# CTRL-R, searching bash history
-stty -ixon
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias th_pkg='cd /usr/local/share/lua/5.1'
+alias sentiment='cd ~/Projects/Sentiment'
