@@ -108,18 +108,11 @@ fi
 
 alias ..='cd ..'
 alias ~='cd ~'
-alias texmaker='open /Users/zhaojunbo/Applications/TexmakerMacosxLion/texmaker.app'
-alias ae='cd /Users/zhaojunbo/Projects/SDAE-by-paracel'
-alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
 
 # For macbook terminal
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias textedit='open -a TextEdit'
-
-alias phd='open ~/Documents/Books/PhD_not_enough.pdf'
-alias highlight='cd /Users/zhaojunbo/Starred/Highlight'
-alias english='cat /Users/zhaojunbo/Documents/Eng'
 
 # rm !(*zip)
 shopt -s extglob

@@ -5,9 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 #ZSH_THEME="random"
-ZSH_THEME="jake"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -77,7 +76,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texb
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# alias for Jake
 # ---------------------------------------------
 # Basic
 alias ll='ls -alF'
@@ -87,14 +85,7 @@ alias l='ls -CF'
 # Diary
 alias ..='cd ..'
 alias ~='cd ~'
-alias texmaker='open /Users/zhaojunbo/Applications/TexmakerMacosxLion/texmaker.app'
 alias textedit='open -a TextEdit'
-alias highlight='cd /Users/zhaojunbo/Starred/Highlight'
-alias english='cat /Users/zhaojunbo/Documents/Eng'
-# ---------------------------------------------
-# Projects
-alias ae='cd /Users/zhaojunbo/Projects/SDAE-by-paracel'
-alias me='cd /Users/zhaojunbo/Projects/zhaojunbo.github.io'
 # ---------------------------------------------
 # Utils
 alias V='vim '
@@ -122,7 +113,3 @@ alias git=hub
 
 # globbing patterns to match all the files except some
 setopt extended_glob
-
-figlet Dpark Doc\!
-echo -e '\n'
-figlet OpenBLAS
