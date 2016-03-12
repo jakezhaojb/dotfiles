@@ -11,6 +11,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
@@ -124,9 +125,9 @@ let g:molokai_original = 1
 set t_Co=256
 let g:Powerline_symbols = 'fancy'
 " Solarized"
-"set background=dark
-"colorscheme solarized
+"set background=light
 "let g:solarized_termcolors=256
+"colorscheme solarized
 
 
 """
