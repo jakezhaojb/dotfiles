@@ -26,7 +26,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'ervandew/supertab'
 "Bundle 'spolu/dwm.vim'
 Bundle 'xuhdev/SingleCompile'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
 Bundle 'Rip-Rip/clang_complete'
 
 Bundle 'airblade/vim-gitgutter'
@@ -51,6 +51,9 @@ Bundle 'scrooloose/nerdtree'
 " Python-mode
 "Bundle 'klen/python-mode'
 
+Bundle 'flazz/vim-colorschemes'
+
+
 " Lua
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-lua-ftplugin'
@@ -61,6 +64,11 @@ let g:lua_safe_omni_modules = 1
 
 " CUDA
 Bundle 'jakezhaojb/snipmate-snippets-cuda'
+
+" Torch
+Bundle 'jakezhaojb/vim-torch-snipmate'
+
+au BufNewFile,BufRead *.cu set ft=cuda
 
 filetype plugin indent on     " required!
 
@@ -88,7 +96,7 @@ set showcmd
 set showmatch
 set hlsearch	
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
-set ignorecase
+set noignorecase
 set smartcase
 set incsearch
 set autochdir
@@ -119,15 +127,18 @@ autocmd FileType yaml setlocal sw=2 ts=2
 " colorscheme
 """
 " Molokai
-colorscheme molokai
-set background=dark
-let g:molokai_original = 1
-set t_Co=256
-let g:Powerline_symbols = 'fancy'
+"colorscheme molokai
+"set background=dark
+"let g:molokai_original = 1
+"set t_Co=256
+"let g:Powerline_symbols = 'fancy'
+
 " Solarized"
-"set background=light
-"let g:solarized_termcolors=256
+set background=dark
+let g:solarized_termcolors=256
 "colorscheme solarized
+
+colorscheme gruvbox
 
 
 """
@@ -178,7 +189,7 @@ let g:syntastic_python_checkers = ['flake8', 'pyflakes']
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
-let g:clang_library_path = '/usr/lib/llvm-3.4/lib'
+let g:clang_library_path = '/usr/local/pkg/clang/lib'
 "Key Map"
 nmap <F8> :TagbarToggle<cr>
 nmap <F9> :SCCompile<cr>
@@ -186,6 +197,7 @@ nmap <F10> :SCCompileRun<cr>
 
 "Disable EX mode"
 map Q <Nop>
+map K <Nop>
 map f <Nop>
 " Stoping searching
 nmap <F2> :nohlsearch<CR>
@@ -205,8 +217,9 @@ map <C-e> :NERDTreeToggle<CR>
 
 " For C++ and lua indentation
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
-autocmd FileType cu setlocal shiftwidth=2 tabstop=2
 autocmd FileType lua setlocal shiftwidth=3 tabstop=3
+autocmd FileType c setlocal shiftwidth=2 tabstop=2
+autocmd FileType cuda setlocal shiftwidth=2 tabstop=2
 
 " For pymode driving
 " Disable all rope completions, since it is much worse than Omni-completion.
@@ -215,9 +228,3 @@ let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
 
-" for CUDA
-autocmd BufNewFile,BufRead *.cu,*.cuh set ft=cuda
-
-let g:snipMate = {}
-let g:snipMate.scope_aliases = {}
-let g:snipMate.scope_aliases['cuda'] = 'cu'
