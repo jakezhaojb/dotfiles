@@ -29,6 +29,10 @@ Browse [here](http://www.scholarslab.org/research-and-development/code-spelunkin
 
     ln -sf ~/.files/.profile ~/.profile
     ln -sf ~/.files/.bashrc ~/.bashrc
+    
+### Screen usage
+    
+    ln -sf ~/.files/.screenrc ~/.screenrc
 
 
 ### Zsh usage
